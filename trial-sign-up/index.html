@@ -52,15 +52,15 @@
                         <div class="title-text">
                             <h3>Sign up to receive notification when the trial of Smarteez NMS starts</h3>
                         </div>
-                        <form action="#">
-                            <!-- Username -->
-                            <input class="form-control main" type="text" placeholder="Your Name" required>
+                        <form action="https://formspree.io/f/xeqpvjjo" method="POST">
+                            <!-- Name -->
+                            <input class="form-control main" name="name" type="text" placeholder="Your Name" required>
                             <!-- Email -->
-                            <input class="form-control main" type="email" placeholder="Email Address" required>
-                            <!-- Email -->
-                            <input class="form-control main" type="tel" placeholder="Phone Number">
+                            <input class="form-control main" name="email" type="email" placeholder="Email Address" required>
+                            <!-- Phone -->
+                            <input class="form-control main" name="phone" type="tel" placeholder="Phone Number">
                             <!-- Submit Button -->
-                            <button class="btn btn-main-md">sign up</button>
+                            <input class="btn btn-main-md" type="submit" value="sign up"/>
                         </form>
                         <div class="new-acount">
                             <p>By clicking “Sign Up” I agree to <a href="../privacy-policy/">Terms of Conditions.</a></p>
