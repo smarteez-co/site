@@ -35,7 +35,7 @@
 
 <nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
   <div class="container">
-    <a class="navbar-brand" href="../"><img src="../images/logo.png" alt="logo"></a>
+    <a class="navbar-brand" href=".."><img src="../images/logo.png" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="ti-menu"></span>
@@ -43,10 +43,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item @@home">
-          <a class="nav-link" href="../">Home</a>
+          <a class="nav-link" href="..">Home</a>
             </li>
         <li class="nav-item @@contact">
-          <a class="nav-link" href="../contact/">Contact</a>
+          <a class="nav-link" href="../contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -81,7 +81,7 @@
 <section class="address">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 align-self-center">
+            <div class="col-6">
                 <div class="block">
                     <div class="address-block text-center mb-5">
                         <div class="icon">
@@ -92,6 +92,10 @@
                             <h3>(44) 771 102 1731 (UK)</h3>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="block">
                     <div class="address-block text-center">
                         <div class="icon">
                             <i class="ti-map-alt"></i>
@@ -102,12 +106,6 @@
                             <h3>London, England</h3>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-7 mt-5 mt-lg-0">
-                <div class="google-map">
-                    <!-- Google Map -->
-                    <div id="map_canvas" data-latitude="51.5306629" data-longitude="-0.0958454"></div>
                 </div>
             </div>
         </div>
@@ -122,19 +120,19 @@
                 <h2 class="mb-5 text-center">Drop us a mail</h2>
             </div>
             <div class="col-12">
-                <form action="">
+                <form action="https://formspree.io/f/xeqpvjjo" method="POST">
                     <div class="row">
                         <!-- Name -->
                         <div class="col-md-6 mb-2">
-                            <input class="form-control main" type="text" placeholder="Name" required>
+                            <input class="form-control main" name="name" type="text" placeholder="Name" required>
                         </div>
                         <!-- Email -->
                         <div class="col-md-6 mb-2">
-                            <input class="form-control main" type="email" placeholder="Your Email Address" required>
+                            <input class="form-control main" name="email" type="email" placeholder="Your Email Address" required>
                         </div>
-                        <!-- subject -->
+                        <!-- Subject -->
                         <div class="col-md-12 mb-2">
-                            <input class="form-control main" type="text" placeholder="Subject" required>
+                            <input class="form-control main" name="subject" type="text" placeholder="Subject" required>
                         </div>
                         <!-- Message -->
                         <div class="col-md-12 mb-2">
@@ -142,7 +140,7 @@
                         </div>
                         <!-- Submit Button -->
                         <div class="col-12 text-right">
-                            <button class="btn btn-main-md">Submit</button>
+                            <input class="btn btn-main-md" type="submit" value="Submit"/>
                         </div>
                     </div>
                 </form>
@@ -160,7 +158,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-12 m-md-auto align-self-center">
           <div class="block">
-            <a href="../"><img src="../images/logo.png" alt="footer-logo"></a>
+            <a href=".."><img src="../images/logo.png" alt="footer-logo"></a>
             <!-- Social Site Icons -->
             <ul class="social-icon list-inline">
               <li class="list-inline-item">
@@ -178,7 +176,7 @@
             <h6>Smarteez NMS</h6>
             <!-- links -->
             <ul>
-              <li><a href="../trial-sign-up/">Sing up for free trial</a></li>
+              <li><a href="../trial-sign-up">Sing up for free trial</a></li>
             </ul>
           </div>
         </div>
@@ -188,8 +186,9 @@
             <h6>Company</h6>
             <!-- links -->
             <ul>
-              <li><a href="../contact/">Contact</a></li>
-              <li><a href="../privacy-policy/">Privacy Policy</a></li>
+              <li><a href="../contact">Contact</a></li>
+                <li><a href="../cookie-policy">Cookie policy</a></li>
+                <li><a href="../terms-and-conditions">Terms and conditions</a></li>
             </ul>
           </div>
         </div>
@@ -197,8 +196,8 @@
     </div>
   </div>
   <div class="text-center bg-dark py-4">
-    <small class="text-secondary">Copyright &copy; 2021 by Smarteez Software. Theme designed &amp; by <a
-        href="https://themefisher.com/">Themefisher</a></small class="text-secondary">
+      <small class="text-secondary">Copyright &copy; 2021 by Smarteez Software. Theme designed by <a
+              href="https://themefisher.com/">Themefisher</a></small>
   </div>
 </footer>
 
@@ -215,9 +214,6 @@
   <script src="../plugins/fancybox/jquery.fancybox.min.js"></script>
   <script src="../plugins/syotimer/jquery.syotimer.min.js"></script>
   <script src="../plugins/aos/aos.js"></script>
-  <!-- google map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
-  <script src="../plugins/google-map/gmap.js"></script>
   
   <script src="../js/script.js"></script>
 </body>
