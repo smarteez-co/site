@@ -341,8 +341,8 @@ button:focus,
 .btn-main-md {
   padding: 17px 38px;
   border-radius: 3px;
-  background: #2e7eed;
-  color: #fff;
+  background: #ffc107;
+  color: #212529;
   outline: none;
 }
 
